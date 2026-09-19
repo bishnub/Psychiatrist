@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 import { doctor } from "@/lib/doctor";
 import StickyContactBar from "@/components/StickyContactBar";
+import SocialLinks from "@/components/SocialLinks";
 
 const icons = {
   brain: Brain,
@@ -39,6 +40,7 @@ export default function Home() {
             <a className="transition hover:text-teal-700" href="#education">Education</a>
             <a className="transition hover:text-teal-700" href="#practice">Practice</a>
             <a className="transition hover:text-teal-700" href="#services">Services</a>
+            <a className="transition hover:text-teal-700" href={doctor.social.facebook} target="_blank" rel="noopener noreferrer">Videos</a>
           </div>
           
           <a  href="#contact"
@@ -87,16 +89,16 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center md:justify-end">
-<div className="rounded-[2rem] bg-white/70 p-1 shadow-2xl shadow-teal-900/10 ring-1 ring-teal-100">
-  <Image
-    src="/doctor.jpg"
-    alt={`Portrait of ${doctor.name}`}
-    width={480}
-    height={560}
-    priority
-    className="h-80 w-72 rounded-[1.75rem] object-cover object-top md:h-[26rem] md:w-80"
-  />
-</div>
+          <div className="rounded-[2rem] bg-white/70 p-1 shadow-2xl shadow-teal-900/10 ring-1 ring-teal-100">
+            <Image
+              src="/doctor.jpg"
+              alt={`Portrait of ${doctor.name}`}
+              width={480}
+              height={560}
+              priority
+              className="h-80 w-72 rounded-[1.75rem] object-cover object-top md:h-[26rem] md:w-80"
+            />
+          </div>
           </div>
         </div>
       </header>
@@ -266,6 +268,12 @@ export default function Home() {
               </span>
             </a>
           </div>
+          <div className="mt-10">
+          <p className="mb-3 text-sm text-teal-200/70">
+            Watch mental health insights and talks on our channels
+          </p>
+          <SocialLinks />
+        </div>
 
           <p className="mt-8 max-w-2xl rounded-xl border border-amber-300/20 bg-amber-300/10 p-4 text-sm text-amber-100">
             Please do not share sensitive medical details over email. If you are in a crisis or emergency,
@@ -276,6 +284,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="bg-slate-950 py-8 pb-28 text-center text-xs text-slate-400 md:pb-8">
+        <SocialLinks className="mb-5 justify-center" />
         <p>© {new Date().getFullYear()} {doctor.name}. All rights reserved.</p>
         <p className="mt-1">
           The information shared here is meant to guide you, not to replace a personal consultation. Please book an appointment for advice specific to you.

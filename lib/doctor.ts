@@ -41,4 +41,8 @@ interests: ["Mood and anxiety disorders", "Sleep and stress management", "Adoles
     whatsapp: "9779807302924", // country code + number, digits only, no + or spaces
     whatsappMessage: "Hello, I would like to book an appointment.",
   },
+  social: {
+    facebook: "https://www.facebook.com/imbishnubhagat",
+    youtube: "https://www.youtube.com/@imbishnubhagat",
+ },
 };
