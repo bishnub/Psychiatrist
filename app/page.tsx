@@ -6,6 +6,8 @@ import {
 import { doctor } from "@/lib/doctor";
 import StickyContactBar from "@/components/StickyContactBar";
 import SocialLinks from "@/components/SocialLinks";
+import MobileMenu from "@/components/MobileMenu";
+import Reveal from "@/components/Reveal";
 
 const icons = {
   brain: Brain,
@@ -31,23 +33,34 @@ export default function Home() {
     <main>
       {/* NAV */}
       <nav className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <div className="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#top" className="font-serif text-lg font-semibold text-teal-900">
             {doctor.name}
           </a>
+
           <div className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
             <a className="transition hover:text-teal-700" href="#about">About</a>
             <a className="transition hover:text-teal-700" href="#education">Education</a>
             <a className="transition hover:text-teal-700" href="#practice">Practice</a>
             <a className="transition hover:text-teal-700" href="#services">Services</a>
-            <a className="transition hover:text-teal-700" href={doctor.social.facebook} target="_blank" rel="noopener noreferrer">Videos</a>
+            <a className="transition hover:text-teal-700" href="#faq">FAQ</a>
+            <a
+              className="transition hover:text-teal-700"
+              href={doctor.social.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Videos
+            </a>
           </div>
-          
+
           <a  href="#contact"
-            className="rounded-full bg-teal-700 px-5 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-teal-800"
+            className="hidden rounded-full bg-teal-700 px-5 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-teal-800 md:inline-block"
           >
             Book appointment
           </a>
+
+          <MobileMenu />
         </div>
       </nav>
 
@@ -117,6 +130,7 @@ export default function Home() {
 
       {/* ABOUT */}
       <section id="about" className="mx-auto max-w-6xl px-6 py-20">
+        <Reveal>
         <SectionHeading eyebrow="About" title="Professional Summary" />
         <p className="max-w-3xl text-lg leading-relaxed text-slate-600">{doctor.about}</p>
         <div className="mt-6 flex flex-wrap gap-2">
@@ -126,11 +140,13 @@ export default function Home() {
           </span>
         ))}
       </div>
+      </Reveal>
       </section>
       
 
       {/* EDUCATION */}
       <section id="education" className="bg-white py-20">
+        <Reveal>
         <div className="mx-auto max-w-6xl px-6">
           <SectionHeading eyebrow="Background" title="Education & Qualifications" />
           <ol className="relative ml-3 space-y-8 border-l-2 border-teal-100">
@@ -146,10 +162,12 @@ export default function Home() {
             ))}
           </ol>
         </div>
+        </Reveal>
       </section>
 
 {/* PRACTICE */}
 <section id="practice" className="mx-auto max-w-6xl px-6 py-20">
+  <Reveal>
   <SectionHeading eyebrow="Practice" title="Current Hospital / Clinic" />
   <div className="grid gap-6 md:grid-cols-2">
     {doctor.affiliations.map((a) => {
@@ -192,10 +210,12 @@ export default function Home() {
       );
     })}
   </div>
+  </Reveal>
 </section>
 
       {/* SERVICES */}
       <section id="services" className="bg-white py-20">
+        <Reveal>
         <div className="mx-auto max-w-6xl px-6">
           <SectionHeading eyebrow="Care" title="Services Offered" />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -216,10 +236,50 @@ export default function Home() {
             })}
           </div>
         </div>
+        </Reveal> 
       </section>
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <Reveal>
+  <SectionHeading eyebrow="Process" title="What to expect" />
+  <div className="grid gap-6 md:grid-cols-3">
+    {[
+      { n: "01", t: "Book", d: "Call, WhatsApp or email to choose a convenient time." },
+      { n: "02", t: "Consultation", d: "A confidential, unhurried conversation to understand your concerns." },
+      { n: "03", t: "Care plan", d: "A clear treatment plan explained to you, with regular follow-up." },
+    ].map((s) => (
+      <div key={s.n} className="rounded-2xl border border-slate-200 bg-white p-7">
+        <p className="font-serif text-4xl font-semibold text-teal-400">{s.n}</p>
+        <h3 className="mt-3 font-sans text-lg font-semibold text-slate-900">{s.t}</h3>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">{s.d}</p>
+      </div>
+    ))}
+  </div>
+  </Reveal>
+</section>
+{/* FAQ */}
+<section id="faq" className="mx-auto max-w-3xl px-6 py-20">
+  <Reveal>
+    <SectionHeading eyebrow="FAQ" title="Frequently Asked Questions" />
+    <div className="space-y-3">
+      {doctor.faqs.map((f) => (
+        <details
+          key={f.q}
+          className="group rounded-xl border border-slate-200 bg-white p-5 transition open:shadow-sm"
+        >
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-slate-900 [&::-webkit-details-marker]:hidden">
+            {f.q}
+            <span className="text-2xl leading-none text-teal-600 transition group-open:rotate-45">+</span>
+          </summary>
+          <p className="mt-3 text-sm leading-relaxed text-slate-600">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </Reveal>
+</section>
 
       {/* CONTACT */}
       <section id="contact" className="bg-teal-950 py-20 text-white">
+        <Reveal> 
         <div className="mx-auto max-w-6xl px-6">
           <p className="text-sm font-semibold uppercase tracking-widest text-teal-300">Contact</p>
           <h2 className="mt-2 text-3xl font-semibold md:text-4xl">Book a consultation</h2>
@@ -280,6 +340,7 @@ export default function Home() {
             contact your local emergency services or the nearest hospital immediately.
           </p>
         </div>
+        </Reveal> 
       </section>
 
       {/* FOOTER */}

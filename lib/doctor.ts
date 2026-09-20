@@ -46,4 +46,26 @@ interests: ["Addiction related disorders", "Geriatric psychiatry","Headache & Ep
     youtube: "https://www.youtube.com/laxman.bhgt",
     instagram: "https://www.instagram.com/laxman.bhgt",
  },
+ faqs: [
+  {
+    q: "Is my consultation confidential?",
+    a: "Yes. Everything discussed during a consultation is kept private.",
+  },
+  {
+    q: "How do I book an appointment?",
+    a: "You can call, message on WhatsApp or email using the details in the Contact section.",
+  },
+  {
+    q: "Do you offer online consultations?",
+    a: "Please contact the clinic to check availability of online consultations.",
+  },
+  {
+    q: "What should I bring to my first visit?",
+    a: "Any previous prescriptions, reports or medical records, if available.",
+  },
+  {
+    q: "Should I see a psychiatrist or a psychologist?",
+    a: "A psychiatrist is a medical doctor who can diagnose conditions and prescribe medication. A psychologist provides therapy and counselling. The doctor can advise on what suits your situation.",
+  },
+],
 };
