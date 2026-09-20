@@ -270,7 +270,7 @@ export default function Home() {
           </div>
           <div className="mt-10">
           <p className="mb-3 text-sm text-teal-200/70">
-            Watch mental health insights and talks on our channels
+            Follow for mental health insights and updates
           </p>
           <SocialLinks />
         </div>

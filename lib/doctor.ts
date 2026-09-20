@@ -4,8 +4,8 @@ export const doctor = {
   tagline: "Compassionate, evidence-based mental health care.",
   registration: "Medical Council Reg. No. 28528",
   about:
-  "Dr. Laxman Bhagat is a consultant Neuropsychiatrist with 10 years of experience, committed to compassionate and evidence-based care.",
-interests: ["Mood and anxiety disorders", "Sleep and stress management", "Adolescent mental health"],
+  "Dr. Laxman Bhagat is a consultant Neuropsychiatrist with 1+ years of experience, committed to compassionate and evidence-based care.",
+interests: ["Addiction related disorders", "Geriatric psychiatry","Headache & Epilepsy","Sexual disorders","Psycho-oncology","Mood and anxiety disorders", "Sleep and stress management", "Adolescent mental health"],
 
   education: [
     { degree: "MD (Psychiatry)", institution: "AIIMS Delhi", year: "2025" },
@@ -17,15 +17,15 @@ interests: ["Mood and anxiety disorders", "Sleep and stress management", "Adoles
       name: "Birat Teaching Hospital",
       role: "Consultant Neuropsychiatrist",
       address: "G7FH+F3X, Tankisinuwari, Koshi Province 56613, Nepal",
-      timings: "Mon–Sat, 10:00 AM – 2:00 PM",
+      timings: "Sun–Fri, 09:00 AM – 05:00 PM",
       // What you'd type into Google Maps: clinic name + area + city
       mapQuery: "G7FH+F3X, Tankisinuwari, Koshi Province 56613, Nepal",
     },
   ],
   highlights: [
-    { value: "10+", label: "Years of experience" },
+    { value: "1+", label: "Years of experience" },
     { value: "5,000+", label: "Consultations" },
-    { value: "3", label: "Languages spoken" },
+    { value: "5", label: "Languages spoken" },
   ],
 
   services: [
@@ -42,7 +42,8 @@ interests: ["Mood and anxiety disorders", "Sleep and stress management", "Adoles
     whatsappMessage: "Hello, I would like to book an appointment.",
   },
   social: {
-    facebook: "https://www.facebook.com/imbishnubhagat",
-    youtube: "https://www.youtube.com/@imbishnubhagat",
+    facebook: "https://www.facebook.com/laxman.bhgt",
+    youtube: "https://www.youtube.com/laxman.bhgt",
+    instagram: "https://www.instagram.com/laxman.bhgt",
  },
 };
