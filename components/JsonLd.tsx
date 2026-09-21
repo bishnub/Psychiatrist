@@ -11,14 +11,14 @@ export default function JsonLd() {
     url: SITE,
     image: `${SITE}/doctor.jpg`,
     description:
-      "Consultant Psychiatrist at Birat Teaching Hospital, Biratnagar, Nepal. MD Psychiatry, AIIMS Delhi.",
+      "Consultant Psychiatrist at Birat Medical College Teaching Hospital, Biratnagar, Nepal. MD Psychiatry, AIIMS Delhi.",
     medicalSpecialty: "Psychiatric",
     telephone: "+977-9807302924",
     email: "info@laxmanbhagat.com.np",
     knowsLanguage: ["Nepali", "English", "Hindi", "Maithili", "Bhojpuri"],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Birat Teaching Hospital, Tankisinuwari",
+      streetAddress: "Birat Medical College Teaching Hospital, Tankisinuwari",
       addressLocality: "Biratnagar",
       addressRegion: "Koshi Province",
       postalCode: "56613",
@@ -46,6 +46,16 @@ export default function JsonLd() {
       "https://www.youtube.com/@dr.laxmanbhagat8599",
       "https://www.instagram.com/laxman.bhgt",
     ],
+    hospitalAffiliation: {
+    "@type": "Hospital",
+    name: "Birat Medical College Teaching Hospital",
+    address: {
+            "@type": "PostalAddress",
+            addressLocality: "Biratnagar",
+            addressRegion: "Koshi Province",
+            addressCountry: "NP",
+        },
+    },
   };
 
   return (
