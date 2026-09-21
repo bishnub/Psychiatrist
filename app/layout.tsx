@@ -9,16 +9,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.laxmanbhagat.com.np"),
   title: "Dr. Laxman Bhagat | Consultant Psychiatrist in Biratnagar, Nepal",
   description:
-    "Dr. Laxman Bhagat, Consultant Neuro psychiatrist at Birat Teaching Hospital, Biratnagar, Koshi Province, Nepal. MD Psychiatry, AIIMS Delhi. Consultations for depression, anxiety, addiction, sleep disorders and more.",
+    "Consultant Neuropsychiatrist at Birat Medical College Teaching Hospital, Biratnagar. MD Psychiatry, AIIMS Delhi. Depression, anxiety, addiction and sleep care.",
   alternates: { canonical: "/" },
-  openGraph: { 
-    images: ["/doctor.jpg"],
-    title: "Dr. Laxman Bhagat | Consultant Neuropsychiatrist",
-    description: "Consultant Neuropsychiatrist. Clinic details, services and appointments.",
+  openGraph: {
+    title: "Dr. Laxman Bhagat | Consultant Psychiatrist in Biratnagar",
+    description:
+      "Consultant Neuropsychiatrist at Birat Medical College Teaching Hospital. Clinic details, services and appointments.",
     url: "/",
     siteName: "Dr. Laxman Bhagat",
     locale: "en_NP",
-    type: "website", 
+    type: "website",
+    images: ["/doctor.jpg"],
+  },
+  verification: {
+    google: "NxefvIUsmU9hKHR-9wsM-w8Hien3UZ2o_dM-uwmeaN0", 
   },
 };
 
