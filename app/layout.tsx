@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dr. Laxman Bhagat | Consultant Psychiatrist in Biratnagar",
     description:
-      "Consultant Neuropsychiatrist at Birat Medical College Teaching Hospital. Clinic details, services and appointments.",
+      "Consultant Neuropsychiatrist at Birat Medical College Teaching Hospital, Biratnagar. View services, clinic details and book an appointment.",
     url: "/",
     siteName: "Dr. Laxman Bhagat",
     locale: "en_NP",

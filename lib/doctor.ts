@@ -14,12 +14,12 @@ interests: ["Addiction related disorders", "Geriatric psychiatry","Headache & Ep
 
   affiliations: [
     {
-      name: "Birat Teaching Hospital",
+      name: "Birat Medical College Teaching Hospital",
       role: "Consultant Neuropsychiatrist",
-      address: "Birat Teaching Hospital, Tankisinuwari, Koshi Province 56613, Nepal",
+      address: "Birat Medical College Teaching Hospital, Tankisinuwari, Koshi Province 56613, Nepal",
       timings: "Sun–Fri, 09:00 AM – 05:00 PM",
       // What you'd type into Google Maps: clinic name + area + city
-      mapQuery: "Birat Teaching Hospital, Tankisinuwari, Koshi Province 56613, Nepal",
+      mapQuery: "Birat Medical College Teaching Hospital, Tankisinuwari, Biratnagar, Nepal",
     },
   ],
   highlights: [
