@@ -8,22 +8,29 @@ export default function StickyContactBar() {
   )}`;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(15,23,42,0.08)] backdrop-blur md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(74,28,40,0.10)] backdrop-blur md:hidden">
       <div className="mx-auto grid max-w-md grid-cols-2 gap-3">
-        
-        <a  href={phoneHref}
-          className="flex items-center justify-center gap-2 rounded-full border border-teal-700 py-3 text-sm font-semibold text-teal-800 transition active:bg-teal-50"
+
+        {/* Call */}
+        <a
+          href={phoneHref}
+          className="flex items-center justify-center gap-2 rounded-full border border-[#6B2737] py-3 text-sm font-semibold text-[#6B2737] transition hover:bg-[#F6ECEE] active:bg-[#F6ECEE]"
         >
-          <Phone className="h-4 w-4" /> Call
+          <Phone className="h-4 w-4" />
+          Call
         </a>
-        
-        <a  href={whatsappHref}
+
+        {/* WhatsApp */}
+        <a
+          href={whatsappHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 rounded-full bg-emerald-600 py-3 text-sm font-semibold text-white transition active:bg-emerald-700"
+          className="flex items-center justify-center gap-2 rounded-full bg-[#6B2737] py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#4A1C28] active:bg-[#4A1C28]"
         >
-          <MessageCircle className="h-4 w-4" /> WhatsApp
+          <MessageCircle className="h-4 w-4" />
+          WhatsApp
         </a>
+
       </div>
     </div>
   );

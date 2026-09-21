@@ -34,7 +34,7 @@ export default function SocialLinks({ className = "" }: { className?: string }) 
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${doctor.name} on ${label}`}
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-teal-200 transition hover:bg-teal-500 hover:text-white"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/70 transition-all duration-200 hover:border-[#E8C8D0] hover:bg-[#6B2737] hover:text-white hover:-translate-y-0.5"
         >
           <Icon />
         </a>
@@ -42,3 +42,4 @@ export default function SocialLinks({ className = "" }: { className?: string }) 
     </div>
   );
 }
+

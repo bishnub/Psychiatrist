@@ -1,8 +1,18 @@
+
 @import "tailwindcss";
 
 :root {
   --background: #fbf8f3;
-  --foreground: #1c2b2a;
+  --foreground: #2d292a;
+
+  /* Burgundy brand palette */
+  --primary: #6b2737;
+  --primary-dark: #4a1c28;
+  --accent: #9b5a68;
+  --accent-light: #f6ecee;
+
+  --muted: #70676a;
+  --border: #e6dadd;
 }
 
 html {
@@ -20,6 +30,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-playfair), Georgia, serif;
+  color: var(--primary-dark);
 }
 
 /* Keeps section titles visible below the sticky nav */
@@ -28,5 +39,7 @@ section[id] {
 }
 
 ::selection {
-  background: #99f6e4;
+  background: #e8cdd3;
+  color: var(--primary-dark);
 }
+
