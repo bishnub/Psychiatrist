@@ -8,6 +8,7 @@ import StickyContactBar from "@/components/StickyContactBar";
 import SocialLinks from "@/components/SocialLinks";
 import MobileMenu from "@/components/MobileMenu";
 import Reveal from "@/components/Reveal";
+import JsonLd from "@/components/JsonLd";
 
 const icons = {
   brain: Brain,
@@ -32,6 +33,7 @@ export default function Home() {
   return (
     <main>
       {/* NAV */}
+      <JsonLd />
       <nav className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-md">
         <div className="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#top" className="font-serif text-lg font-semibold text-teal-900">

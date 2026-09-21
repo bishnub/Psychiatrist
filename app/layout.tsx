@@ -7,9 +7,9 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.laxmanbhagat.com.np"),
-  title: "Dr. Laxman Bhagat | Consultant Neuropsychiatrist in Nepal",
+  title: "Dr. Laxman Bhagat | Consultant Psychiatrist in Biratnagar, Nepal",
   description:
-    "Dr. Laxman Bhagat, Consultant Neuropsychiatrist at Birat Teaching Hospital, Biratnagar, Koshi Province, Nepal. MD Psychiatry, AIIMS Delhi. Consultations for depression, anxiety, addiction, sleep disorders and more.",
+    "Dr. Laxman Bhagat, Consultant Neuro psychiatrist at Birat Teaching Hospital, Biratnagar, Koshi Province, Nepal. MD Psychiatry, AIIMS Delhi. Consultations for depression, anxiety, addiction, sleep disorders and more.",
   alternates: { canonical: "/" },
   openGraph: { 
     images: ["/doctor.jpg"],
