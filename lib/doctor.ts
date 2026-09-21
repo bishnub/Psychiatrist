@@ -1,38 +1,38 @@
 export const doctor = {
   name: "Dr. Laxman Bhagat",
-  title: "Consultant Neuropsychiatrist",
-  tagline: "Compassionate, evidence-based mental health care.",
+  title: "Consultant Neuropsychiatrist, MD Psychiatry, AIIMS Delhi",
+  tagline: "Evidence-based psychiatric care for adults, adolescents and families in Nepal.",
   registration: "Medical Council Reg. No. 28528",
   about:
-  "Dr. Laxman Bhagat is a consultant Neuropsychiatrist with 1+ years of experience, committed to compassionate and evidence-based care.",
+   "I am a Consultant Neuropsychiatrist with over 3 years of clinical experience, dedicated to providing compassionate, evidence-based psychiatric care for adults, adolescents, and families. I completed my MD in Psychiatry at the AIIMS, Delhi, following my MBBS from Nobel Medical College Teaching Hospital, Biratnagar.\n\nMy clinical interests include mood and anxiety disorders, addiction-related disorders, adolescent mental health, sleep and stress-related concerns, geriatric psychiatry, sexual disorders, psycho-oncology, and neurological conditions such as headache and epilepsy. I also provide medication management, psychotherapy, and neuromodulation-based interventions where clinically appropriate.\n\nI believe that effective psychiatric care begins with listening and understanding each person's unique concerns and circumstances. My approach is individualized and evidence-based, with a focus on providing clear explanations, developing appropriate treatment plans, and supporting patients throughout their journey toward better mental health and well-being.",
 interests: ["Addiction related disorders", "Geriatric psychiatry","Headache & Epilepsy","Sexual disorders","Psycho-oncology","Mood and anxiety disorders", "Sleep and stress management", "Adolescent mental health"],
 
   education: [
-    { degree: "MD (Psychiatry)", institution: "AIIMS Delhi", year: "2025" },
-    { degree: "MBBS", institution: "Nobel Medical College", year: "2021" },
+    { degree: "MD (Psychiatry)", institution: "All India Institute Of Medical Sciences (AIIMS), Delhi", year: "2025" },
+    { degree: "MBBS", institution: "Nobel Medical College Teaching Hospital, Biratnagar", year: "2021" },
   ],
 
   affiliations: [
     {
       name: "Birat Teaching Hospital",
       role: "Consultant Neuropsychiatrist",
-      address: "G7FH+F3X, Tankisinuwari, Koshi Province 56613, Nepal",
+      address: "Birat Teaching Hospital, Tankisinuwari, Koshi Province 56613, Nepal",
       timings: "Sun–Fri, 09:00 AM – 05:00 PM",
       // What you'd type into Google Maps: clinic name + area + city
-      mapQuery: "G7FH+F3X, Tankisinuwari, Koshi Province 56613, Nepal",
+      mapQuery: "Birat Teaching Hospital, Tankisinuwari, Koshi Province 56613, Nepal",
     },
   ],
   highlights: [
-    { value: "1+", label: "Years of experience" },
-    { value: "5,000+", label: "Consultations" },
-    { value: "5", label: "Languages spoken" },
+    { value: "3+", label: "Years of Clinical Experience" },
+    { value: "1,000+", label: "Patient consultations across Clinical Training and Professional Practice" },
+    { value: "5", label: "Languages spoken (Nepali, English, Hindi, Maithili, Bhojpuri)" },
   ],
 
   services: [
-    { icon: "brain", title: "Depression & Anxiety", description: "Assessment and treatment of mood and anxiety disorders." },
+    { icon: "brain", title: "Neuromodulation", description: "Procedures like mCET, tDCS, Ketamine Infusion." },
     { icon: "pill", title: "Medication Management", description: "Safe, monitored prescribing and follow-up." },
     { icon: "message", title: "Psychotherapy", description: "Structured therapy sessions tailored to the individual." },
-    { icon: "baby", title: "Child & Adolescent Care", description: "Support for developmental and behavioural concerns." },
+    //{ icon: "baby", title: "Child & Adolescent Care", description: "Support for developmental and behavioural concerns." },
   ],
 
   contact: {
@@ -42,8 +42,8 @@ interests: ["Addiction related disorders", "Geriatric psychiatry","Headache & Ep
     whatsappMessage: "Hello, I would like to book an appointment.",
   },
   social: {
-    facebook: "https://www.facebook.com/laxman.bhgt",
-    youtube: "https://www.youtube.com/laxman.bhgt",
+    facebook: "https://www.facebook.com/61585771391702",
+    youtube: "https://www.youtube.com/@dr.laxmanbhagat8599",
     instagram: "https://www.instagram.com/laxman.bhgt",
  },
  faqs: [

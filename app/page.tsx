@@ -46,7 +46,7 @@ export default function Home() {
             <a className="transition hover:text-teal-700" href="#faq">FAQ</a>
             <a
               className="transition hover:text-teal-700"
-              href={doctor.social.youtube}
+              href={doctor.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
             >
