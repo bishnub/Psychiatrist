@@ -2,9 +2,9 @@ export const doctor = {
   name: "Dr. Laxman Bhagat",
   title: "Consultant Neuropsychiatrist, MD Psychiatry, AIIMS Delhi",
   tagline: "Evidence-based psychiatric care for adults, adolescents and families in Nepal.",
-  registration: "Medical Council Reg. No. 28528",
+  registration: "Nepal Medical Council (NMC) Reg. No. 28528",
   about:
-   "I am a Consultant Neuropsychiatrist with over 3 years of clinical experience, dedicated to providing compassionate, evidence-based psychiatric care for adults, adolescents, and families. I completed my MD in Psychiatry at the AIIMS, Delhi, following my MBBS from Nobel Medical College Teaching Hospital, Biratnagar.\n\nMy clinical interests include mood and anxiety disorders, addiction-related disorders, adolescent mental health, sleep and stress-related concerns, geriatric psychiatry, sexual disorders, psycho-oncology, and neurological conditions such as headache and epilepsy. I also provide medication management, psychotherapy, and neuromodulation-based interventions where clinically appropriate.\n\nI believe that effective psychiatric care begins with listening and understanding each person's unique concerns and circumstances. My approach is individualized and evidence-based, with a focus on providing clear explanations, developing appropriate treatment plans, and supporting patients throughout their journey toward better mental health and well-being.",
+   "I am a Consultant Neuropsychiatrist with over 3 years of clinical experience, providing compassionate, evidence-based care for adults, adolescents, and families. I completed my MD in Psychiatry at AIIMS, Delhi, following my MBBS from Nobel Medical College, Biratnagar.\n\nMy clinical interests include mood and anxiety disorders, addiction, adolescent and geriatric mental health, sleep and stress-related concerns, and neurological conditions. My approach is patient-centered, combining careful listening, clear communication, and individualized treatment.",
 interests: ["Addiction related disorders", "Geriatric psychiatry","Headache & Epilepsy","Sexual disorders","Psycho-oncology","Mood and anxiety disorders", "Sleep and stress management", "Adolescent mental health"],
 
   education: [
@@ -20,6 +20,8 @@ interests: ["Addiction related disorders", "Geriatric psychiatry","Headache & Ep
       timings: "Sun–Fri, 09:00 AM – 05:00 PM",
       // What you'd type into Google Maps: clinic name + area + city
       mapQuery: "Birat Medical College Teaching Hospital, Tankisinuwari, Biratnagar, Nepal",
+      image: "/hospital.jpg",
+      imageAlt: "Birat Medical College Teaching Hospital exterior",
     },
   ],
   highlights: [
@@ -68,4 +70,11 @@ interests: ["Addiction related disorders", "Geriatric psychiatry","Headache & Ep
     a: "A psychiatrist is a medical doctor who can diagnose conditions and prescribe medication. A psychologist provides therapy and counselling. The doctor can advise on what suits your situation.",
   },
 ],
+psychiatryInfo: {
+  eyebrow: "Understanding Mental Health",
+  title: "What is Psychiatry, Neuropsychiatry & Psychotherapy?",
+  image: "/patient-consultation.jpg",
+  imageAlt: "A calm consultation setting representing psychiatric care",
+  text: "**Psychiatry** focuses on the diagnosis, treatment, and prevention of mental, emotional, and behavioural conditions, including medication and psychotherapy when appropriate.\n\n**Neuropsychiatry** explores the connection between brain health and mental health, particularly when neurological conditions such as epilepsy, headaches, or brain injuries are associated with psychiatric symptoms.\n\n**Psychotherapy** uses structured conversations to help people understand and manage their thoughts, emotions, behaviours, relationships, and mental health.",
+},
 };

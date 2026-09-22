@@ -273,72 +273,36 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* PRACTICE */}
-      <section
-        id="practice"
-        className="mx-auto max-w-6xl px-6 py-20"
-      >
+      {/* PSYCHIATRY & PSYCHOTHERAPY EXPLAINED */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
         <Reveal>
-          <SectionHeading
-            eyebrow="Practice"
-            title="Current Hospital / Clinic"
-          />
+          <div className="grid items-center gap-12 md:grid-cols-2">
 
-          <div className="grid gap-6 md:grid-cols-2">
-            {doctor.affiliations.map((a) => {
-              const q = encodeURIComponent(a.mapQuery);
 
-              return (
-                <div
-                  key={a.name}
-                  className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
-                >
-                  <div className="p-7">
-                    <h3 className="font-sans text-xl font-semibold text-slate-900">
-                      {a.name}
-                    </h3>
+            <div>
+              <SectionHeading
+                eyebrow={doctor.psychiatryInfo.eyebrow}
+                title={doctor.psychiatryInfo.title}
+              />
 
-                    <p className="mt-1 text-[#6B2737]">
-                      {a.role}
-                    </p>
-
-                    <ul className="mt-5 space-y-3 text-slate-600">
-                      <li className="flex gap-3">
-                        <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#6B2737]" />
-                        {a.address}
-                      </li>
-
-                      <li className="flex gap-3">
-                        <Clock className="mt-0.5 h-5 w-5 shrink-0 text-[#6B2737]" />
-                        {a.timings}
-                      </li>
-                    </ul>
-
-                    <a
-                      href={`https://www.google.com/maps/search/?api=1&query=${q}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-[#6B2737] hover:text-[#4A1C28]"
-                    >
-                      <Navigation className="h-4 w-4" />
-                      Get directions
-                    </a>
-                  </div>
-
-                  <iframe
-                    title={`Map showing ${a.name}`}
-                    src={`https://www.google.com/maps?q=${q}&output=embed`}
-                    className="h-64 w-full border-t border-slate-200"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    allowFullScreen
-                  />
-                </div>
-              );
-            })}
+              <p className="text-slate-600 leading-relaxed">
+                {doctor.psychiatryInfo.text}
+              </p>
+            </div>
+                  <div>
+              <Image
+                src={doctor.psychiatryInfo.image}
+                alt={doctor.psychiatryInfo.imageAlt}
+                width={640}
+                height={480}
+                priority
+                className="w-full rounded-2xl object-cover shadow-lg shadow-[#4A1C28]/10"
+              />
+            </div>
           </div>
         </Reveal>
       </section>
+      
 
       {/* SERVICES */}
       <section
@@ -427,6 +391,79 @@ export default function Home() {
           </div>
         </Reveal>
       </section>
+
+{/* PRACTICE */}
+<section id="practice" className="mx-auto max-w-6xl px-6 py-20">
+  <Reveal>
+    <SectionHeading eyebrow="Practice" title="Current Hospital / Clinic" />
+
+    <div className="grid gap-6">
+  {doctor.affiliations.map((a) => {
+    const q = encodeURIComponent(a.mapQuery);
+
+    return (
+      <div
+        key={a.name}
+        className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
+      >
+        <div className="grid sm:grid-cols-2">
+          {/* Details - left */}
+          <div className="p-7">
+            <h3 className="font-sans text-xl font-semibold text-slate-900">
+              {a.name}
+            </h3>
+
+            <p className="mt-1 text-[#6B2737]">{a.role}</p>
+
+            <ul className="mt-5 space-y-3 text-slate-600">
+              <li className="flex gap-3">
+                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#6B2737]" />
+                {a.address}
+              </li>
+              <li className="flex gap-3">
+                <Clock className="mt-0.5 h-5 w-5 shrink-0 text-[#6B2737]" />
+                {a.timings}
+              </li>
+            </ul>
+
+            
+           <a   href={`https://www.google.com/maps/search/?api=1&query=${q}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-[#6B2737] hover:text-[#4A1C28]"
+            >
+              <Navigation className="h-4 w-4" />
+              Get directions
+            </a>
+          </div>
+
+          {/* Hospital photo - right */}
+          <div className="relative min-h-[220px] sm:min-h-full">
+            <Image
+              src={a.image}
+              alt={a.imageAlt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, 50vw"
+            />
+          </div>
+        </div>
+
+        {/* Map - full width below */}
+        <iframe
+          title={`Map showing ${a.name}`}
+          src={`https://www.google.com/maps?q=${q}&output=embed`}
+          className="h-64 w-full border-t border-slate-200"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+        />
+      </div>
+    );
+  })}
+</div>
+  </Reveal>
+</section>
 
       {/* FAQ */}
       <section
@@ -523,12 +560,12 @@ export default function Home() {
                 className="flex min-w-0 items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
               >
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#E8C8D0]">
-  <MessageCircle className="h-5 w-5" />
-</span>
+                  <MessageCircle className="h-5 w-5" />
+                </span>
 
                 <span className="min-w-0">
                   <span className="block text-sm text-white/60">WhatsApp</span>
-                  <span className="block text-lg font-medium">Chat with us</span>
+                  <span className="block whitespace-nowrap text-sm font-medium sm:text-base">Chat with us</span>
                 </span>
               </a>
             </div>
