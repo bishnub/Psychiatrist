@@ -1,5 +1,5 @@
 export const doctor = {
-  name: "Dr. Laxman Bhagat",
+  name: "Dr. Laxman Kumar Bhagat",
   title: "Consultant Neuropsychiatrist, MD Psychiatry, AIIMS Delhi",
   tagline: "Evidence-based psychiatric care for adults, adolescents and families in Nepal.",
   registration: "Nepal Medical Council (NMC) Reg. No. 28528",
@@ -26,7 +26,7 @@ interests: ["Addiction related disorders", "Geriatric psychiatry","Headache & Ep
   ],
   highlights: [
     { value: "3+", label: "Years of Clinical Experience" },
-    { value: "1,000+", label: "Patient consultations across Clinical Training and Professional Practice" },
+    { value: "5,000+", label: "Patient consultations across Clinical Training and Professional Practice" },
     { value: "5", label: "Languages spoken (Nepali, English, Hindi, Maithili, Bhojpuri)" },
   ],
 

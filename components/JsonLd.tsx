@@ -7,11 +7,11 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Physician",
     "@id": `${SITE}/#physician`,
-    name: "Dr. Laxman Bhagat",
+    name: "Dr. Laxman Kumar Bhagat",
     url: SITE,
     image: `${SITE}/doctor.jpg`,
     description:
-      "Consultant Psychiatrist at Birat Medical College Teaching Hospital, Biratnagar, Nepal. MD Psychiatry, AIIMS Delhi.",
+      "Consultant Psychiatrist at Birat Medical College Teaching Hospital, Biratnagar, Nepal. MD Psychiatry, AIIMS Delhi, NMC Reg. No. 28528.",
     medicalSpecialty: "Psychiatric",
     telephone: "+977-9807302924",
     email: "info@laxmanbhagat.com.np",
